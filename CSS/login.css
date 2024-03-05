@@ -1,3 +1,9 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,14 +18,19 @@ body {
 }
 
 .form-box {
-    width: 400px;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 8px;
-    margin: 20px;
+    padding: 20px;
     height: 500px;
     width: 450px; /* Adjust width as needed */
+}
+
+.form-box h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .input-box {
@@ -31,48 +42,45 @@ body {
     transform: translateX(0);
     /*display: none;*/
 }
+
 .input-box input {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     outline: none;
     font-size: 18px;
     font-weight: bolder;
     color: black;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 5px;
-     
+    
 }
-.input-box .icon {
-    position: absolute;
-    color: #333;
-    right: 8px;
-    font-size: 1.2em;
-    line-height: 60px;
-    cursor: pointer;
+.error{
+    border-color: red
+
 }
 
-label {
+.input-box label {
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
+    color: #999;
     font-size: 14px;
-    color: #888;
-    transition: 0.3s;
     pointer-events: none;
+    transition: 0.3s;
 }
 
-input:focus + label,
-input:valid + label {
-    top: 10px;
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 20%;
     font-size: 12px;
-    color: #333;
+    color: #999;
 }
 
 .remember-forgot {
     margin-top: 20px;
     font-size: .9em;
+    color: black;
     font-weight: 500;
     margin: -7px 0 15px ;
     display: flex;
@@ -82,20 +90,61 @@ input:valid + label {
     color: black;
     text-decoration: none;
 }
+
 .remember-forgot a:hover{
     text-decoration:underline;
 }
 
 .btn {
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    height: 45px;
     border: none;
-    border-radius: 5px;
+    outline: none;
+    border-radius:  6px;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
-/**sign up**/
 
+.btn:hover {
+    background-color: rgba(98, 159, 106, 0.984)
+}
+
+.login-register {
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.register-link {
+    color: #1f4921fb;
+    text-decoration: none;
+    font-weight: bold;
+}
+.register-link a:hover{
+    text-decoration:underline;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #817f7f;
+    line-height: 60px;
+    cursor: pointer;
+
+}
+.input-box .eye-open{
+    display: none;
+}
+.input-box .eye-close{
+    display: block;
+}
+
+/**sign up**/
 .login-register p a{
     color: #1f4921fb;
     text-decoration: none;
@@ -106,39 +155,35 @@ input:valid + label {
     
 }
 
-wrapper .form-box.register{
-    position: absolute;
-    transition: none;
+.wrapper.active{
+   
+}
+
+
+.wrapper.active .form-box.login{
+    transition: none ;
     transform: translateX(-1000px); 
+   
+
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .40s ease; 
+    transform: translateX(0);
+    
   }
+
+.wrapper .form-box.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(-1000px); 
+}
+.egistercheckbox{
+    background-color: red;
+}
 .conditions{
     -webkit-text-stroke-width: 0.9px; 
     -webkit-text-stroke-color: black;
 
 }
 
-
-
-
-
-
-
-
-.errorMessage {
-    color: red;
-    font-weight: bolder;
-    margin-left: 20px;
-    -webkit-text-stroke-width: 0.9px;
-    -webkit-text-stroke-color: black;
-}
-
-#emailLoginMessage,
-#PasswordMessage,
-#usernameMessage,
-#emailMessage,
-#passwordMessage1 {
-    color: red;
-    font-weight: bolder;
-    -webkit-text-stroke-width: 0.9px;
-    -webkit-text-stroke-color: black;
-}
