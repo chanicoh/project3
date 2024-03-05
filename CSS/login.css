@@ -25,14 +25,12 @@ body {
     height: 500px;
     width: 450px; /* Adjust width as needed */
 }
-
 .form-box h2 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 28px;
     margin-bottom: 20px;
 }
-
 .input-box {
     position: relative;
     margin-bottom: 20px;
@@ -119,8 +117,8 @@ body {
     color: black;
     font-size: 14px;
 }
-
-.register-link {
+/********/
+.register-link .login-link{
     color: #1f4921fb;
     text-decoration: none;
     font-weight: bold;
@@ -154,36 +152,15 @@ body {
     text-decoration: underline;
     
 }
-
-.wrapper.active{
-   
+.form-box{
+    display: none;
+}
+.active{
+    display: block;
 }
 
-
-.wrapper.active .form-box.login{
-    transition: none ;
-    transform: translateX(-1000px); 
-   
-
-}
-
-.wrapper.active .form-box.register{
-    transition: transform .40s ease; 
-    transform: translateX(0);
-    
-  }
-
-.wrapper .form-box.register{
-  position: absolute;
-  transition: none;
-  transform: translateX(-1000px); 
-}
-.egistercheckbox{
-    background-color: red;
-}
 .conditions{
     -webkit-text-stroke-width: 0.9px; 
     -webkit-text-stroke-color: black;
 
 }
-

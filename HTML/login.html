@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper"> 
-        <div class=" form-box login">
+        <div class=" form-box login active" id="login">
             <p id="errorMessage" style="color: red; font-weight: bolder; margin-left: 20px; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>   
             <form id="loginForm" action="#">
                 <h2>Login</h2>
@@ -41,12 +41,12 @@
             </button>
                 <div class="login-register">
                     <p>Don't have an account? 
-                        <a href="#" class="register-link">Register</a>
+                        <a href="#" class="register-link" data-target="register">Register</a>
                     </p>
                 </div>
             </form>
         </div>
-        <div class="form-box register">
+        <div class="form-box register" id="register">
             <h2>Sign up</h2>
             <form id="signUpForm" action="#">
                 <div class=" input-box">
@@ -85,14 +85,15 @@
             </button>
                 <div class="login-register">
                     <p>Already have an account? 
-                        <a href="#" class="login-link">Login</a>
+                        <a href="#" class="login-link" data-target="login">Login</a>
                     </p>
                 </div>
             </form>
         </div>
     </div>
-    <script src ="/JS/Login.js">   
+    <script src ="/js/login.js">   
     </script>
+    
     
 </body>
 </html>
