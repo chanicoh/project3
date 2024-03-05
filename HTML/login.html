@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/login.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="wrapper"> 
+        <div class=" form-box login">
+            <p id="errorMessage" style="color: red; font-weight: bolder; margin-left: 20px; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>   
+            <form id="loginForm" action="#">
+                <h2>Login</h2>
+                <div class=" input-box">
+                    <span class="icon">
+                    <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                 </span> 
+                    <input id="EmailLogin" type="email" required>
+                    <label>Email</label>
+                    <p id="emailLoginMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
+                </div>
+                <div class="input-box">
+                <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput1')">
+                    <i class="fa fa-eye-slash" class="eyeClose" style="font-size:24px"></i>
+                </span>
+                <span class="icon eye-open" onclick="togglePasswordVisibility('passwordInput1')">
+                    <i class="fa fa-eye" class="eyeClose" style="font-size:24px"></i>
+                </span> 
+                <input id="passwordInput1" type="password" required>
+                <label>Password</label>
+                <p id="PasswordMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black ;"></p>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">
+                remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn" onclick="loginClick()">Login
+            </button>
+                <div class="login-register">
+                    <p>Don't have an account? 
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Sign up</h2>
+            <form id="signUpForm" action="#">
+                <div class=" input-box">
+                    <span class="icon">
+                        <i class="fa fa-user-circle-o" style="font-size:24px"></i>
+                 </span> 
+                    <input id="Username" type="text" required >
+                    <label>Username</label>
+                    <p id="usernameMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
+                </div>
+                <div class=" input-box">
+                    <span class="icon">
+                    <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                 </span> 
+                    <input id="EmailSignUp" type="email" required>
+                    <label>Email</label>
+                    <p id="emailMessage" style="color: red; font-weight: bolder;  -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
+                </div>
+                <div class="input-box">
+                    <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput2')">
+                        <i class="fa fa-eye-slash" class="eyeClose"  style="font-size:24px" ></i>
+                    </span>
+                    <span class="icon eye-open" onclick="togglePasswordVisibility('passwordInput2')">
+                        <i class="fa fa-eye" class="eyeClose"  style="font-size:24px"></i>
+                    </span> 
+                    <input id="passwordInput2" type="password" required>
+                    <label>Password</label>
+                    <p id="passwordMessage1" style="color: red; font-weight: bolder;  -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
+            </div>
+            <div class="remember-forgot conditions ">
+                <label><input id="registercheckbox" type="checkbox">
+                I agree to the terms & conditions</label>
+                
+            </div>
+            <button type="submit" class="btn" onclick="signUpClick()">Sign up
+            </button>
+                <div class="login-register">
+                    <p>Already have an account? 
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src ="/JS/Login.js">   
+    </script>
     
 </body>
 </html>
