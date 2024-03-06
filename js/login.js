@@ -22,8 +22,13 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
       // Storing the logged-in user in localStorage
       localStorage.setItem('loggedInUser', username0);
 
+      document.querySelector('.active').classList.remove('active');
+      document.getElementById('task').classList.add('active');
+      history.replaceState({}, 'task', '#task');
+
+
       // Redirecting to the home page
-      window.location.href = "../html/home.html";
+      //window.location.href = "../html/home.html";
       break;
     }
   }

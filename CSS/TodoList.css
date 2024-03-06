@@ -19,6 +19,9 @@ body{
 .task{
   display: none;
 }
+.active{
+  display: block;
+}
 .wrapperTo{
 
   max-width: 405px;
