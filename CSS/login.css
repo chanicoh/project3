@@ -52,10 +52,6 @@ body {
     border-radius: 5px;
     
 }
-.error{
-    border-color: red
-
-}
 
 .input-box label {
     position: absolute;
@@ -94,7 +90,7 @@ body {
 }
 
 .btn {
-    background-color: #4CAF50;
+    background-color: rgb(61, 61, 241);
     width: 100%;
     margin-top: 20px;
     height: 45px;
@@ -108,7 +104,7 @@ body {
 }
 
 .btn:hover {
-    background-color: rgba(98, 159, 106, 0.984)
+    background-color: rgb(4, 4, 65)
 }
 
 .login-register {
@@ -155,6 +151,7 @@ body {
 .form-box{
     display: none;
 }
+
 .active{
     display: block;
 }

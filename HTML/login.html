@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="/CSS/TodoList.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper"> 
         <div class=" form-box login active" id="login">
-            <p id="errorMessage" style="color: red; font-weight: bolder; margin-left: 20px; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>   
             <form id="loginForm" action="#">
                 <h2>Login</h2>
                 <div class=" input-box">
                     <span class="icon">
                     <i class="fa fa-envelope-o" style="font-size:24px"></i>
                  </span> 
-                    <input id="EmailLogin" type="email" required>
-                    <label>Email</label>
-                    <p id="emailLoginMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
+                    <input id="EmailLogin" type="text" required>
+                    <label>User Name</label>
                 </div>
                 <div class="input-box">
                 <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput1')">
@@ -30,14 +31,13 @@
                 </span> 
                 <input id="passwordInput1" type="password" required>
                 <label>Password</label>
-                <p id="PasswordMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black ;"></p>
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox">
                 remember me</label>
                 <a href="#">Forgot Password?</a>
             </div>
-            <button type="submit" class="btn" onclick="loginClick()">Login
+            <button type="submit" class="btn" data-target="taskTo">Login
             </button>
                 <div class="login-register">
                     <p>Don't have an account? 
@@ -55,7 +55,6 @@
                  </span> 
                     <input id="Username" type="text" required >
                     <label>Username</label>
-                    <p id="usernameMessage" style="color: red; font-weight: bolder; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
                 </div>
                 <div class=" input-box">
                     <span class="icon">
@@ -63,7 +62,6 @@
                  </span> 
                     <input id="EmailSignUp" type="email" required>
                     <label>Email</label>
-                    <p id="emailMessage" style="color: red; font-weight: bolder;  -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
                 </div>
                 <div class="input-box">
                     <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput2')">
@@ -74,14 +72,13 @@
                     </span> 
                     <input id="passwordInput2" type="password" required>
                     <label>Password</label>
-                    <p id="passwordMessage1" style="color: red; font-weight: bolder;  -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: black;"></p>
             </div>
             <div class="remember-forgot conditions ">
                 <label><input id="registercheckbox" type="checkbox">
                 I agree to the terms & conditions</label>
                 
             </div>
-            <button type="submit" class="btn" onclick="signUpClick()">Sign up
+            <button type="submit" class="btn">Sign up
             </button>
                 <div class="login-register">
                     <p>Already have an account? 
@@ -90,8 +87,29 @@
                 </div>
             </form>
         </div>
+        <section>
+            <div class="wrapper">
+                <div class="task-input">
+                  <img src="../bars-icon.svg" alt="icon">
+                  <input type="text" placeholder="Add a new task">
+                </div>
+                <div class="controls">
+                  <div class="filters">
+                    <span class="active" id="all">All</span>
+                    <span id="pending">Pending</span>
+                    <span id="completed">Completed</span>
+                  </div>
+                  <button class="clear-btn">Clear All</button>
+                </div>
+                <ul class="task-box"></ul>
+              </div>
+        </section>
+        
     </div>
-    <script src ="/js/login.js">   
+    <section>
+       
+    </section>
+    <script src ="/js/login.js" src="/js/TodoList.js">   
     </script>
     
     
