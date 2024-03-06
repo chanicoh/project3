@@ -16,7 +16,11 @@ body{
   color: #fff;
   background: #3C87FF;
 }
+.task{
+  display: none;
+}
 .wrapperTo{
+
   max-width: 405px;
   padding: 28px 0 30px;
   margin: 137px auto;
