@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,43 @@
     <!-- Iconscout Link For Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="/CSS/login.css">
-    <link rel="stylesheet" href="/CSS/TodoList.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="wrapper"> 
+    <div class="wrapper">
         <div class=" form-box login active" id="login">
             <form id="loginForm" action="#">
                 <h2>Login</h2>
                 <div class=" input-box">
                     <span class="icon">
-                    <i class="fa fa-envelope-o" style="font-size:24px"></i>
-                 </span> 
+                        <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                    </span>
                     <input id="EmailLogin" type="text" required>
                     <label>User Name</label>
                 </div>
                 <div class="input-box">
-                <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput1')">
-                    <i class="fa fa-eye-slash" class="eyeClose" style="font-size:24px"></i>
-                </span>
-                <span class="icon eye-open" onclick="togglePasswordVisibility('passwordInput1')">
-                    <i class="fa fa-eye" class="eyeClose" style="font-size:24px"></i>
-                </span> 
-                <input id="passwordInput1" type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">
-                remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn" data-target="task">Login
-            </button>
+                    <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput1')">
+                        <i class="fa fa-eye-slash" class="eyeClose" style="font-size:24px"></i>
+                    </span>
+                    <span class="icon eye-open" onclick="togglePasswordVisibility('passwordInput1')">
+                        <i class="fa fa-eye" class="eyeClose" style="font-size:24px"></i>
+                    </span>
+                    <input id="passwordInput1" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <a class = "btn" href="TodoList.html" target="_blank">Login</a>
+
+
+
                 <div class="login-register">
-                    <p>Don't have an account? 
+                    <p>Don't have an account?
                         <a href="#" class="register-link" data-target="register">Register</a>
                     </p>
                 </div>
@@ -52,66 +56,49 @@
                 <div class=" input-box">
                     <span class="icon">
                         <i class="fa fa-user-circle-o" style="font-size:24px"></i>
-                 </span> 
-                    <input id="Username" type="text" required >
+                    </span>
+                    <input id="Username" type="text" required>
                     <label>Username</label>
                 </div>
                 <div class=" input-box">
                     <span class="icon">
-                    <i class="fa fa-envelope-o" style="font-size:24px"></i>
-                 </span> 
+                        <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                    </span>
                     <input id="EmailSignUp" type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon eye-close" onclick="togglePasswordVisibility('passwordInput2')">
-                        <i class="fa fa-eye-slash" class="eyeClose"  style="font-size:24px" ></i>
+                        <i class="fa fa-eye-slash" class="eyeClose" style="font-size:24px"></i>
                     </span>
                     <span class="icon eye-open" onclick="togglePasswordVisibility('passwordInput2')">
-                        <i class="fa fa-eye" class="eyeClose"  style="font-size:24px"></i>
-                    </span> 
+                        <i class="fa fa-eye" class="eyeClose" style="font-size:24px"></i>
+                    </span>
                     <input id="passwordInput2" type="password" required>
                     <label>Password</label>
-            </div>
-            <div class="remember-forgot conditions ">
-                <label><input id="registercheckbox" type="checkbox">
-                I agree to the terms & conditions</label>
-                
-            </div>
-            <button type="submit" class="btn">Sign up
-            </button>
+                </div>
+                <div class="remember-forgot conditions ">
+                    <label><input id="registercheckbox" type="checkbox">
+                        I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btn">Sign up
+                </button>
                 <div class="login-register">
-                    <p>Already have an account? 
+                    <p>Already have an account?
                         <a href="#" class="login-link" data-target="login">Login</a>
                     </p>
                 </div>
             </form>
         </div>
-        <section id="task" class="task">
-            <div class="wrapperTo">
-                <div class="task-input">
-                  <img src="../bars-icon.svg" alt="icon">
-                  <input type="text" placeholder="Add a new task">
-                </div>
-                <div class="controls">
-                  <div class="filters">
-                    <span class="active" id="all">All</span>
-                    <span id="pending">Pending</span>
-                    <span id="completed">Completed</span>
-                  </div>
-                  <button class="clear-btn">Clear All</button>
-                </div>
-                <ul class="task-box"></ul>
-              </div>
-        </section>
-        
+
+
     </div>
-    <section class="task">
-       
-    </section>
-    <script src ="/js/login.js" src="/js/TodoList.js">   
-    </script>
-    
-    
+
+    <script src="/js/login.js"></script>
+
+
+
 </body>
+
 </html>
