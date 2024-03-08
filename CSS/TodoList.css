@@ -190,6 +190,26 @@ body{
   padding-right: 8px;
 }
 
+
+/* Style for the logout button */
+.logoutButton {
+  
+  background-color: #fff;
+  color: #2651ed ;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 7px ;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.logoutButton:hover {
+  background-color: #3C87FF;
+  color: #fff;
+}
+
+
 @media (max-width: 400px) {
   body{
     padding: 0 10px;
