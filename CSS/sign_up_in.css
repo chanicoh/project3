@@ -1,0 +1,90 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-container a {
+  color: #1798fb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1798fb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2D5CFE;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: 2D5CFE;
+}
+
+a {
+  text-decoration: none;
+  color: #2D5CFE;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/**** PAGES ****/
+.page {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  /* allow for content off the bottom of the page */
+  position: fixed;
+  /* or absolute if the user needs to scroll for more content */
+  padding: 1rem 2rem;
+}
+
+.active {
+  display: block;
+}
+
+#sign-in {}
+
+#sign-up {}
