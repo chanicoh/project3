@@ -193,7 +193,9 @@ body{
 
 /* Style for the logout button */
 .logoutButton {
-  
+  position: relative;
+  top: 10px;
+  left: 5px;
   background-color: #fff;
   color: #2651ed ;
   font-weight: bold;

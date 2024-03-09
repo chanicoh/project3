@@ -76,7 +76,7 @@ document.getElementById('signupForm').addEventListener('submit', function (event
       storeUserLocally(newUser);
 
       alert('הרישום הצליח!');
-      window.location.href="login.html";
+      window.location.href="../HTML/sign_up_in.html";
     }
   });
 
@@ -98,7 +98,7 @@ document.getElementById('signupForm').addEventListener('submit', function (event
     this.email = email;
     this.password = password;
     this.lastLogin = "Not available";
- 
+    this.todoList = [];
   }
 
   
