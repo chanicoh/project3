@@ -1,14 +1,21 @@
 // --------db--------------------
 const db = require("../db/db");
 const { v4 } = require("uuid");
+// db.Users.create({
+//   id: v4(),
+//   name: { type: String },
+//   password: { type: String, required: true },
+//   email: { type: String, required: true },
+// }).save();
+
+
+
 db.Users.create({
   id: v4(),
-  name: { type: String },
-  password: { type: String, required: true },
-  email: { type: String, required: true },
+  name: "chen",
+  password: "chen1234" ,
+  email: "chen@email.com" ,
 }).save();
-
-
 
 
 

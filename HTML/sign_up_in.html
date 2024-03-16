@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="../CSS/sign_up_in.css">
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <script src="https://cdn.jsdelivr.net/npm/backbone-db-local@0.5.13/index.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uuid@9.0.1/dist/index.min.js"></script>
 </head>
@@ -20,7 +22,7 @@
           <form id="loginForm">
             <input type="text" id="loginUsername" placeholder="Username" required>
             <input type="password" id="loginPassword" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <button type="submit" href="#" data-target="todo-list" class="nav-link">Login</button>
           </form>
           <p>Don't have an account? <a href="#" data-target="sign-up" class="nav-link">Sign up</a></p>
         </div>
@@ -40,6 +42,29 @@
           <p>Already have an account? <a  href="#" data-target="sign-in" class="nav-link">Login</a></p>
         </div>
       </div>
+    </section>
+
+
+
+    <section class="page" id="todo-list">
+      <a href="sign_up_in.html" class="logoutButton">Logout </a>
+      <div class="wrapper">
+        <div class="task-input">
+          <img src="../bars-icon.svg" alt="icon">
+          <input type="text" placeholder="Add a new task">
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+        
+      </div>
+  
     </section>
   </main>
   <script src="../js/sign_up_in.js"></script>
