@@ -190,7 +190,8 @@ function getLocalStorageTodos() {
 
 let editId,
   isEditTask = false,
-  todos = getLocalStorageTodos();
+  todos;
+  // todos = getLocalStorageTodos();
 
 function initTodos() {
   (isEditTask = false), (todos = getLocalStorageTodos());
